@@ -40,6 +40,9 @@
         <ObjectProperty IRI="#estáSobre"/>
     </Declaration>
     <Declaration>
+        <ObjectProperty IRI="#temCor"/>
+    </Declaration>
+    <Declaration>
         <DataProperty IRI="#temMassa"/>
     </Declaration>
     <Declaration>
@@ -108,6 +111,10 @@
         <ObjectProperty IRI="#estáSob"/>
         <ObjectProperty IRI="#estáSobre"/>
     </InverseObjectProperties>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#temCor"/>
+        <Class IRI="#Cor"/>
+    </ObjectPropertyRange>
     <FunctionalDataProperty>
         <DataProperty IRI="#temMassa"/>
     </FunctionalDataProperty>
