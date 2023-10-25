@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/tacla/Ontologies/MundoDosCubos-01"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/tacla/Ontologies/MundoDosCubos-01"
+     versionIRI="https://github.com/tacla/Ontologies/MundoDosCubos-01/1.0.0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="cub" IRI="https://github.com/tacla/Ontologies/MundoDosCubos#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://github.com/tacla/Ontologies/MundoDosCubos</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="pt-br">Importação da ontologia Mundo dos Cubos: observar que a ontologia tem um IRI (https://github.com/tacla/Ontologies/MundoDosCubos) - ID universal e internacional - mas, pode estar armazenada fisicamente em diferentes locais: localmente no seu computador ou em alguma URL. Por exemplo, podemos pegar o arquivo bruto do github: 
+https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos.owx</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="pt-br">Uso da ontologia MundoDosCubos. O objetivo é criar uma instância do MundoDosCubos separando bem a TBox da ABox.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="pt-br">Cubo-01</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#m"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cub:Cubo"/>
+        <NamedIndividual IRI="#a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cub:Cubo"/>
+        <NamedIndividual IRI="#b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cub:Cubo"/>
+        <NamedIndividual IRI="#c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cub:Cubo"/>
+        <NamedIndividual IRI="#d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cub:Cubo"/>
+        <NamedIndividual IRI="#e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="cub:Mesa"/>
+        <NamedIndividual IRI="#m"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:estáSobre"/>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:temCor"/>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual abbreviatedIRI="cub:cor_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:estáSobre"/>
+        <NamedIndividual IRI="#b"/>
+        <NamedIndividual IRI="#a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:temCor"/>
+        <NamedIndividual IRI="#b"/>
+        <NamedIndividual abbreviatedIRI="cub:cor_azul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:estáSobre"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:temCor"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual abbreviatedIRI="cub:cor_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:estáSobre"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual IRI="#c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:temCor"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual abbreviatedIRI="cub:cor_cinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:estáSobre"/>
+        <NamedIndividual IRI="#e"/>
+        <NamedIndividual IRI="#c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:temCor"/>
+        <NamedIndividual IRI="#e"/>
+        <NamedIndividual abbreviatedIRI="cub:cor_vermelha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="cub:temCor"/>
+        <NamedIndividual IRI="#m"/>
+        <NamedIndividual abbreviatedIRI="cub:cor_cinza"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="cub:temMassa"/>
+        <NamedIndividual IRI="#a"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="cub:temMassa"/>
+        <NamedIndividual IRI="#b"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">5</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="cub:temMassa"/>
+        <NamedIndividual IRI="#c"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">8</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="cub:temMassa"/>
+        <NamedIndividual IRI="#d"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="cub:temMassa"/>
+        <NamedIndividual IRI="#e"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">2</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="cub:temMassa"/>
+        <NamedIndividual IRI="#m"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
+    </DataPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
