@@ -1,0 +1,231 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="https://github.com/tacla/Ontologies/MundoDosCubos/"
+     xml:base="https://github.com/tacla/Ontologies/MundoDosCubos/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
+    <owl:Ontology rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos">
+        <owl:versionIRI rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-2023-10-26"/>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#estáSob -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#estáSob">
+        <owl:inverseOf rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#estáSobre"/>
+        <rdfs:comment xml:lang="pt-br">Um objeto pode estar imediatamente sob outro objeto. Objetos que estão no topo de pilhas não estão sob nenhum objeto. É a inversa da propriedade estáSobre.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#estáSobre -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#estáSobre">
+        <rdfs:comment xml:lang="pt-br">Um objeto está imediatamente sobre outro objeto. Um objeto pode estar sobre nenhum, um ou mais de um objeto. Uma mesa que serve de suporte a todos os demais objetos não está sobre nenhum outro.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#temCor -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#temCor">
+        <rdfs:range rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#temMassa -->
+
+    <owl:DatatypeProperty rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#temMassa">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#float"/>
+        <rdfs:comment>Permite associar a massa a um objeto. Nesta ontologia adotamos o Sistema Internacional de Unidades, logo a massa é medida em quilogramas.</rdfs:comment>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Azul -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Azul">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cor"/>
+        <rdfs:comment xml:lang="en">Blue</rdfs:comment>
+        <rdfs:label xml:lang="fr">Bleu</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Cinza -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cinza">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cor"/>
+        <rdfs:label xml:lang="en">Gray</rdfs:label>
+        <rdfs:label xml:lang="fr">Gris</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Cor -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cor">
+        <owl:disjointUnionOf rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Azul"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cinza"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Laranja"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Vermelha"/>
+        </owl:disjointUnionOf>
+        <rdfs:label xml:lang="en">Color</rdfs:label>
+        <rdfs:label xml:lang="fr">Couleur</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Cubo -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo">
+        <rdfs:comment xml:lang="pt-br">Uma figura 3D no formato de um cubo</rdfs:comment>
+        <rdfs:label xml:lang="en">Cube</rdfs:label>
+        <rdfs:label xml:lang="fr">Cube</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Laranja -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Laranja">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cor"/>
+        <rdfs:label xml:lang="en">Orange</rdfs:label>
+        <rdfs:label xml:lang="fr">Orange</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Mesa -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Mesa">
+        <rdfs:comment xml:lang="pt-br">Uma superfície plana onde figuras 3D são colocadas</rdfs:comment>
+        <rdfs:label xml:lang="en">Table</rdfs:label>
+        <rdfs:label xml:lang="fr">Table</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#Vermelha -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Vermelha">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cor"/>
+        <rdfs:label xml:lang="en">Red</rdfs:label>
+        <rdfs:label xml:lang="fr">Rouge</rdfs:label>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#cor_azul -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#cor_azul">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Azul"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#cor_cinza -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#cor_cinza">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cinza"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#cor_laranja -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#cor_laranja">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Laranja"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#cor_vermelha -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#cor_vermelha">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Vermelha"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Azul"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cinza"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Laranja"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Vermelha"/>
+        </owl:members>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
+        <owl:members rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cor"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#Mesa"/>
+        </owl:members>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
