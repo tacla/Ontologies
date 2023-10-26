@@ -9,12 +9,6 @@
     <owl:Ontology rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos">
         <owl:versionIRI rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-2023-10-26"/>
     </owl:Ontology>
-    
-
-
-    <!-- Object Properties -->  
-
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#estáSob -->
 
     <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#estáSob">
         <owl:inverseOf rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#estáSobre"/>
