@@ -14,19 +14,7 @@
 https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos.owx</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Uso da ontologia MundoDosCubos. O objetivo é criar uma instância do MundoDosCubos separando bem a TBox da ABox.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Cubo-01</rdfs:label>
-    </Ontology>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
+    </Ontology>  
 
 
     <!-- https://github.com/tacla/Ontologies/MundoDosCubos#estáSob -->
