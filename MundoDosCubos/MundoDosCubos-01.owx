@@ -155,6 +155,12 @@ https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCu
         <NamedIndividual IRI="#m"/>
         <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#decimal">20</Literal>
     </DataPropertyAssertion>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="cub:estáSob"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="cub:estáSobre"/>
+    </IrreflexiveObjectProperty>
 </Ontology>
 
 
