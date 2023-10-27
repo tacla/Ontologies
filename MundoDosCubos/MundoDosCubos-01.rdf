@@ -1,33 +1,46 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
      xml:base="http://www.w3.org/2002/07/owl"
-     xmlns:cub="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos.rdf#"
+     xmlns:cub="https://github.com/tacla/Ontologies/MundoDosCubos#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
-     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#">
-    <Ontology rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01">
-        <versionIRI rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-01/1.0.0"/>
-        <imports rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos"/>
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:MundoDosCubos="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#">
+    <Ontology rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01">
+        <versionIRI rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01/0.0.0"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-0.0.0"/>
         <rdfs:comment xml:lang="pt-br">Importação da ontologia Mundo dos Cubos: observar que a ontologia tem um IRI (https://github.com/tacla/Ontologies/MundoDosCubos) - ID universal e internacional - mas, pode estar armazenada fisicamente em diferentes locais: localmente no seu computador ou em alguma URL. Por exemplo, podemos pegar o arquivo bruto do github: 
 https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos.owx</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Uso da ontologia MundoDosCubos. O objetivo é criar uma instância do MundoDosCubos separando bem a TBox da ABox.</rdfs:comment>
         <rdfs:label xml:lang="pt-br">Cubo-01</rdfs:label>
-    </Ontology>  
+    </Ontology>
+    
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#estáSob -->
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
 
-    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#estáSob">
+    
+
+
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#estáSob -->
+
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#estáSob">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </rdf:Description>
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos#estáSobre -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#estáSobre -->
 
-    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos#estáSobre">
+    <rdf:Description rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#estáSobre">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#IrreflexiveProperty"/>
     </rdf:Description>
     
@@ -44,67 +57,67 @@ https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCu
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos-01#a -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#a -->
 
-    <NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01#a">
-        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo"/>
-        <cub:estáSobre rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-01#m"/>
-        <cub:temCor rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#cor_laranja"/>
-        <cub:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</cub:temMassa>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#a">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#Cubo"/>
+        <MundoDosCubos:estáSobre rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#m"/>
+        <MundoDosCubos:temCor rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#cor_laranja"/>
+        <MundoDosCubos:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</MundoDosCubos:temMassa>
     </NamedIndividual>
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos-01#b -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#b -->
 
-    <NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01#b">
-        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo"/>
-        <cub:estáSobre rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-01#a"/>
-        <cub:temCor rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#cor_azul"/>
-        <cub:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</cub:temMassa>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#b">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#Cubo"/>
+        <MundoDosCubos:estáSobre rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#a"/>
+        <MundoDosCubos:temCor rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#cor_azul"/>
+        <MundoDosCubos:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">5</MundoDosCubos:temMassa>
     </NamedIndividual>
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos-01#c -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#c -->
 
-    <NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01#c">
-        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo"/>
-        <cub:estáSobre rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-01#m"/>
-        <cub:temCor rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#cor_laranja"/>
-        <cub:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</cub:temMassa>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#c">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#Cubo"/>
+        <MundoDosCubos:estáSobre rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#m"/>
+        <MundoDosCubos:temCor rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#cor_laranja"/>
+        <MundoDosCubos:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">8</MundoDosCubos:temMassa>
     </NamedIndividual>
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos-01#d -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#d -->
 
-    <NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01#d">
-        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo"/>
-        <cub:estáSobre rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-01#c"/>
-        <cub:temCor rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#cor_cinza"/>
-        <cub:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cub:temMassa>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#d">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#Cubo"/>
+        <MundoDosCubos:estáSobre rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#c"/>
+        <MundoDosCubos:temCor rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#cor_cinza"/>
+        <MundoDosCubos:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</MundoDosCubos:temMassa>
     </NamedIndividual>
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos-01#e -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#e -->
 
-    <NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01#e">
-        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Cubo"/>
-        <cub:estáSobre rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos-01#c"/>
-        <cub:temCor rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#cor_vermelha"/>
-        <cub:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</cub:temMassa>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#e">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#Cubo"/>
+        <MundoDosCubos:estáSobre rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#c"/>
+        <MundoDosCubos:temCor rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#cor_vermelha"/>
+        <MundoDosCubos:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">2</MundoDosCubos:temMassa>
     </NamedIndividual>
     
 
 
-    <!-- https://github.com/tacla/Ontologies/MundoDosCubos-01#m -->
+    <!-- https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#m -->
 
-    <NamedIndividual rdf:about="https://github.com/tacla/Ontologies/MundoDosCubos-01#m">
-        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#Mesa"/>
-        <cub:temCor rdf:resource="https://github.com/tacla/Ontologies/MundoDosCubos#cor_cinza"/>
-        <cub:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</cub:temMassa>
+    <NamedIndividual rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01#m">
+        <rdf:type rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#Mesa"/>
+        <MundoDosCubos:temCor rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#cor_cinza"/>
+        <MundoDosCubos:temMassa rdf:datatype="http://www.w3.org/2001/XMLSchema#decimal">20</MundoDosCubos:temMassa>
     </NamedIndividual>
 </rdf:RDF>
 
