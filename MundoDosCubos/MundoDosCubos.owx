@@ -1,13 +1,13 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/tacla/Ontologies/MundoDosCubos"
+     xml:base="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/tacla/Ontologies/MundoDosCubos"
-     versionIRI="https://github.com/tacla/Ontologies/MundoDosCubos-2023-10-26">
-    <Prefix name="" IRI="https://github.com/tacla/Ontologies/MundoDosCubos/"/>
+     ontologyIRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos"
+     versionIRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-0.0.0">
+    <Prefix name="cub" IRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -112,6 +112,12 @@
         <ObjectProperty IRI="#estáSob"/>
         <ObjectProperty IRI="#estáSobre"/>
     </InverseObjectProperties>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#estáSob"/>
+    </IrreflexiveObjectProperty>
+    <IrreflexiveObjectProperty>
+        <ObjectProperty IRI="#estáSobre"/>
+    </IrreflexiveObjectProperty>
     <ObjectPropertyRange>
         <ObjectProperty IRI="#temCor"/>
         <Class IRI="#Cor"/>
@@ -121,7 +127,7 @@
     </FunctionalDataProperty>
     <DataPropertyRange>
         <DataProperty IRI="#temMassa"/>
-        <Datatype abbreviatedIRI="xsd:float"/>
+        <Datatype abbreviatedIRI="owl:real"/>
     </DataPropertyRange>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
