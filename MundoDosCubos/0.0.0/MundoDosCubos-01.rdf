@@ -9,8 +9,8 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:MundoDosCubos="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos#">
     <Ontology rdf:about="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01">
-        <versionIRI rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-01/0.0.0"/>
-        <imports rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos-0.0.0"/>
+        <versionIRI rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/0.0.0"/>
+        <imports rdf:resource="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/0.0.0"/>
         <rdfs:comment xml:lang="pt-br">Importação da ontologia Mundo dos Cubos: observar que a ontologia tem um IRI (https://github.com/tacla/Ontologies/MundoDosCubos) - ID universal e internacional - mas, pode estar armazenada fisicamente em diferentes locais: localmente no seu computador ou em alguma URL. Por exemplo, podemos pegar o arquivo bruto do github: 
 https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MundoDosCubos.owx</rdfs:comment>
         <rdfs:comment xml:lang="pt-br">Uso da ontologia MundoDosCubos. O objetivo é criar uma instância do MundoDosCubos separando bem a TBox da ABox.</rdfs:comment>
