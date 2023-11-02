@@ -1,0 +1,279 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/ABoxes/0100-Propriedades"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/ABoxes/0100-Propriedades">
+    <Prefix name="" IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/ABoxes/0100-Propriedades#"/>
+    <Prefix name="mdc" IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="pt-br">Uso da ontologia MundoDosCubos. O objetivo é criar uma instância do MundoDosCubos separando bem a TBox da ABox.</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <Literal xml:lang="pt-br">Cubo-01</Literal>
+    </Annotation>
+    <Declaration>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+    </Declaration>
+    <Declaration>
+        <Class abbreviatedIRI="mdc:Mesa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estáNoNível2DaMesa"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#estáPreso"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty IRI="#mesaEstáSob_oCubo"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mdc:estáSob"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mdc:estáSobre"/>
+    </Declaration>
+    <Declaration>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+    </Declaration>
+    <Declaration>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#m"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#uma_coisa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="mdc:cor_azul"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="mdc:cor_cinza"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="mdc:cor_laranja"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual abbreviatedIRI="mdc:cor_vermelha"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+        <NamedIndividual IRI="#a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+        <NamedIndividual IRI="#b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+        <NamedIndividual IRI="#c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+        <NamedIndividual IRI="#d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+        <NamedIndividual IRI="#e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+        <NamedIndividual IRI="#f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="mdc:Mesa"/>
+        <NamedIndividual IRI="#m"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual abbreviatedIRI="mdc:cor_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+        <NamedIndividual IRI="#b"/>
+        <NamedIndividual IRI="#a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+        <NamedIndividual IRI="#b"/>
+        <NamedIndividual abbreviatedIRI="mdc:cor_azul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual abbreviatedIRI="mdc:cor_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual IRI="#c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual abbreviatedIRI="mdc:cor_cinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+        <NamedIndividual IRI="#e"/>
+        <NamedIndividual IRI="#c"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+        <NamedIndividual IRI="#e"/>
+        <NamedIndividual abbreviatedIRI="mdc:cor_vermelha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <NamedIndividual IRI="#f"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty abbreviatedIRI="mdc:temCor"/>
+        <NamedIndividual IRI="#m"/>
+        <NamedIndividual abbreviatedIRI="mdc:cor_cinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <NamedIndividual IRI="#uma_coisa"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <NamedIndividual IRI="#a"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <NamedIndividual IRI="#b"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">5.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <NamedIndividual IRI="#c"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">8.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <NamedIndividual IRI="#d"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <NamedIndividual IRI="#e"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">2.0</Literal>
+    </DataPropertyAssertion>
+    <DataPropertyAssertion>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <NamedIndividual IRI="#m"/>
+        <Literal datatypeIRI="http://www.w3.org/2001/XMLSchema#float">20.0</Literal>
+    </DataPropertyAssertion>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <ObjectProperty abbreviatedIRI="mdc:estáSobre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+        <ObjectProperty abbreviatedIRI="mdc:estáSobre"/>
+    </SubObjectPropertyOf>
+    <SubObjectPropertyOf>
+        <ObjectProperty IRI="#mesaEstáSob_oCubo"/>
+        <ObjectProperty abbreviatedIRI="mdc:estáSob"/>
+    </SubObjectPropertyOf>
+    <InverseObjectProperties>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <ObjectProperty IRI="#mesaEstáSob_oCubo"/>
+    </InverseObjectProperties>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="mdc:estáSob"/>
+    </TransitiveObjectProperty>
+    <TransitiveObjectProperty>
+        <ObjectProperty abbreviatedIRI="mdc:estáSobre"/>
+    </TransitiveObjectProperty>
+    <ReflexiveObjectProperty>
+        <ObjectProperty IRI="#estáPreso"/>
+    </ReflexiveObjectProperty>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyDomain>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+    </ObjectPropertyDomain>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        <Class abbreviatedIRI="mdc:Mesa"/>
+    </ObjectPropertyRange>
+    <ObjectPropertyRange>
+        <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+        <Class abbreviatedIRI="mdc:Cubo"/>
+    </ObjectPropertyRange>
+    <SubObjectPropertyOf>
+        <ObjectPropertyChain>
+            <ObjectProperty IRI="#cuboEstáSobre_oCubo"/>
+            <ObjectProperty IRI="#cuboEstáSobre_aMesa"/>
+        </ObjectPropertyChain>
+        <ObjectProperty IRI="#estáNoNível2DaMesa"/>
+    </SubObjectPropertyOf>
+    <DataPropertyRange>
+        <DataProperty abbreviatedIRI="mdc:temMassa"/>
+        <Datatype abbreviatedIRI="xsd:float"/>
+    </DataPropertyRange>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#uma_coisa</IRI>
+        <Literal>Uma coisa qualquer que não pertence a nenhuma classe nomeada.</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.26.2023-07-17T20:34:13Z) https://github.com/owlcs/owlapi -->
+
