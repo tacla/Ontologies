@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MdC"
+     xml:base="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MdC"
-     versionIRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MdC-0.0.0">
+     ontologyIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC"
+     versionIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC-0.0.0">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="mdc" IRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/MdC"/>
+    <Prefix name="mdc" IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
