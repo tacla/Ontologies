@@ -1,14 +1,14 @@
 <?xml version="1.0"?>
 <Ontology xmlns="http://www.w3.org/2002/07/owl#"
-     xml:base="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC"
+     xml:base="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     ontologyIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC"
-     versionIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC-0.0.0">
+     ontologyIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/"
+     versionIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/0.0.0">
     <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
-    <Prefix name="mdc" IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC"/>
+    <Prefix name="MdC" IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos#"/>
     <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
     <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
     <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
@@ -152,6 +152,11 @@
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Cor</IRI>
+        <Literal xml:lang="pt-br">Cor</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cor</IRI>
         <Literal xml:lang="fr">Couleur</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
@@ -171,6 +176,11 @@
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cubo</IRI>
+        <Literal xml:lang="pt-br">Cubo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
         <IRI>#Laranja</IRI>
         <Literal xml:lang="en">Orange</Literal>
     </AnnotationAssertion>
@@ -183,6 +193,11 @@
         <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
         <IRI>#Mesa</IRI>
         <Literal xml:lang="pt-br">Uma superfície plana onde figuras 3D são colocadas</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mesa</IRI>
+        <Literal xml:lang="pt-br">Mesa</Literal>
     </AnnotationAssertion>
     <AnnotationAssertion>
         <AnnotationProperty abbreviatedIRI="rdfs:label"/>
