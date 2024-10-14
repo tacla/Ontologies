@@ -1,4 +1,4 @@
-#ONTOLOGIA MdC 0.0.0
+# ONTOLOGIA MdC 0.0.0
 
 Esta ontologia corresponde ao que espera como resultado da atividade de conceitos em OWL2.
 Tópicos abordados:
