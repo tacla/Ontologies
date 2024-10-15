@@ -1,4 +1,4 @@
-#Mundo dos Cubos versão 0
+# Mundo dos Cubos versão 0
 
 Esta ontologia é o resultado da atividade 0230-ATV-OWL2-Classes cujos objetivos são:
 
