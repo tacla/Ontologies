@@ -1,0 +1,168 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/"
+     versionIRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/0">
+    <Prefix name="" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="MdC" IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos#"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="pt-br">Ontologia MUNDO DOS CUBOS versão 0</Literal>
+    </Annotation>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <Literal xml:lang="en">Ontology WORLD OF CUBES (WoC) version 0</Literal>
+    </Annotation>
+    <Declaration>
+        <Class IRI="MesasCubicas"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="NaoParalelepipedo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="Paralelepipedo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Cubo"/>
+    </Declaration>
+    <Declaration>
+        <Class IRI="#Mesa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="coisa1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="cubo_e_mesa"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="m1"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="p1"/>
+    </Declaration>
+    <EquivalentClasses>
+        <Class IRI="MesasCubicas"/>
+        <ObjectIntersectionOf>
+            <Class IRI="#Cubo"/>
+            <Class IRI="#Mesa"/>
+        </ObjectIntersectionOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="NaoParalelepipedo"/>
+        <ObjectComplementOf>
+            <Class IRI="Paralelepipedo"/>
+        </ObjectComplementOf>
+    </EquivalentClasses>
+    <EquivalentClasses>
+        <Class IRI="Paralelepipedo"/>
+        <ObjectComplementOf>
+            <Class IRI="NaoParalelepipedo"/>
+        </ObjectComplementOf>
+    </EquivalentClasses>
+    <SubClassOf>
+        <Class IRI="MesasCubicas"/>
+        <Class IRI="Paralelepipedo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Cubo"/>
+        <Class IRI="Paralelepipedo"/>
+    </SubClassOf>
+    <SubClassOf>
+        <Class IRI="#Mesa"/>
+        <Class IRI="Paralelepipedo"/>
+    </SubClassOf>
+    <ClassAssertion>
+        <Class IRI="#Cubo"/>
+        <NamedIndividual IRI="a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class abbreviatedIRI="owl:Thing"/>
+        <NamedIndividual IRI="coisa1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <ObjectComplementOf>
+            <Class IRI="Paralelepipedo"/>
+        </ObjectComplementOf>
+        <NamedIndividual IRI="coisa1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Cubo"/>
+        <NamedIndividual IRI="cubo_e_mesa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mesa"/>
+        <NamedIndividual IRI="cubo_e_mesa"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="#Mesa"/>
+        <NamedIndividual IRI="m1"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="Paralelepipedo"/>
+        <NamedIndividual IRI="p1"/>
+    </ClassAssertion>
+    <DifferentIndividuals>
+        <NamedIndividual IRI="a"/>
+        <NamedIndividual IRI="coisa1"/>
+        <NamedIndividual IRI="cubo_e_mesa"/>
+        <NamedIndividual IRI="m1"/>
+        <NamedIndividual IRI="p1"/>
+    </DifferentIndividuals>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <AbbreviatedIRI>rdfs:seeAlso</AbbreviatedIRI>
+        <Literal xml:lang="pt-br">Cubo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Paralelepipedo</IRI>
+        <Literal xml:lang="pt-br">Paralelepípedo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>Paralelepipedo</IRI>
+        <Literal xml:lang="en">Parallelepiped</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Cubo</IRI>
+        <Literal xml:lang="pt-br">Um sólido no formato de um cubo</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Cubo</IRI>
+        <Literal xml:lang="en">Cube</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:comment"/>
+        <IRI>#Mesa</IRI>
+        <Literal xml:lang="pt-br">Um sólido - parelepípedo - onde os cubos são colocados</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mesa</IRI>
+        <Literal xml:lang="pt-br">Mesa</Literal>
+    </AnnotationAssertion>
+    <AnnotationAssertion>
+        <AnnotationProperty abbreviatedIRI="rdfs:label"/>
+        <IRI>#Mesa</IRI>
+        <Literal xml:lang="en">Table</Literal>
+    </AnnotationAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
