@@ -11,9 +11,9 @@ O objetivo é compreender de forma didática a definição de conceitos por meio
 ## Propriedades de objetos
 Interessante notar a hierarquia de propriedades e os axiomas definidos sobre elas (transitividade, antirreflexiva).
 - éFilhaDe: Esta propriedade indica que "x é filha de y". 
-- éIrmãDe: Relaciona duas irmãs de maneira simétrica: "x é irmã de y é uma propriedade simétrica porque y também é irmã de x".
-- éMãe: Esta propriedade é usada para definir a relação "x é mãe de y". É irreflexiva, ou seja, uma pessoa não pode ser mãe de si.
-- éPróximo: Define uma relação de afinidade ou proximidade entre pessoas
-- éTiaMaterna: se utiliza de uma cadeia de propriedades: "x é irmã de y" e "y é mãe de z", resultando em "x é tia materna de z". 
+- éIrmãDe: Relaciona duas irmãs de maneira **simétrica**: "x é irmã de y é uma propriedade simétrica porque y também é irmã de x".
+- éMãe: Esta propriedade é usada para definir a relação "x é mãe de y". É **irreflexiva**, ou seja, uma pessoa não pode ser mãe de si.
+- éPróximo: Define uma relação de afinidade ou proximidade entre pessoas; é **transitiva**.
+- éTiaMaterna: se utiliza de uma **cadeia de propriedades**: "x é irmã de y" e "y é mãe de z", resultando em "x é tia materna de z". 
 ## Propriedades de Dados
-- temIdade: é a idade dos indivíduos em anos e é do tipo xsd:integer. É funcional, o que significa que cada indivíduo tem apenas um valor para esta propriedade.
+- temIdade: é a idade dos indivíduos em anos e é do tipo xsd:integer. É **funcional**, o que significa que cada indivíduo tem apenas um valor para esta propriedade.
