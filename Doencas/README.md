@@ -7,7 +7,7 @@ Ontologia utilizada para aprendizado de alguns padrões ou para responder a perg
 - cadeia de propriedades
 
 Além disso, exercitamos a importação de ontologias para criação de ABoxes.
-- a versão v20241028-1 contém as classes iniciais, é o ponto de partida
+- a versão v20241028-1 contém as classes iniciais e algumas instâncias de doenças, é o ponto de partida
 - a versão v20241028-2 contém a versão final do exercício
 
 ABox
