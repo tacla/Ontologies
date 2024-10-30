@@ -6,9 +6,10 @@ Ontologia utilizada para aprendizado de alguns padrões ou para responder a perg
 - classe ou propriedade
 - cadeia de propriedades
 
-Além disso, exercitamos a importação de ontologias para criação de ABoxes.
-- a versão v20241028-1 contém as classes iniciais e algumas instâncias de doenças, é o ponto de partida
-- a versão v20241028-2 contém a versão final do exercício
+VERSÕES
+- v1: contém as classes iniciais e algumas instâncias de doenças, é o ponto de partida
+- v2: contém os agentes patógenos (axioma de cobertura)
+- v3: contém chain of properties (doenças do paciente)
 
 ABox
-- Doencas-cenario1 contém instâncias de pacientes, médicos, diagnósticos e doenças
+- Doencas-ABOX-v3 contém instâncias de pacientes, médicos, diagnósticos e doenças; necessita da TBOX v3.
