@@ -1,0 +1,524 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="urn:absolute:h/"
+     xml:base="urn:absolute:h/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:Universidade="https://github.com/tacla/Ontologies/tree/main/Universidade#">
+    <owl:Ontology rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade">
+        <owl:versionIRI rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade-v1"/>
+        <rdfs:comment>Ontologia resultante dos exercícios de raciocínio sobre a TBOX e ABOX.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#ehChefeDe -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#ehChefeDe">
+        <rdfs:comment>Uma pessoa é chefe de um departamento.</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#ehCoordenadora -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#ehCoordenadora">
+        <rdfs:domain rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Prof"/>
+        <rdfs:comment>Professor ou professora é coordenadora de Curso</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEm -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEm">
+        <rdfs:comment>Uma pessoa está matriculada em</rdfs:comment>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmCurso -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmCurso">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEm"/>
+        <rdfs:range rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc -->
+
+    <owl:ObjectProperty rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc">
+        <rdfs:subPropertyOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEm"/>
+        <rdfs:range rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#ChefeDepto -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#ChefeDepto">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#ehChefeDe"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Depto"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Funcao"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Curso -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Organizacao"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#CursoGrad -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoGrad">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPG"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPG -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPG">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPGAlt -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPGAlt">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso"/>
+                    <owl:Class>
+                        <owl:complementOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoGrad"/>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Depto -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Depto">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Organizacao"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+                    <owl:Class>
+                        <owl:oneOf rdf:parseType="Collection">
+                            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
+                            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
+                        </owl:oneOf>
+                    </owl:Class>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:oneOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_gdc"/>
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc"/>
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md"/>
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
+                </owl:oneOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEm"/>
+                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Funcao"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteApenasIA -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteApenasIA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA"/>
+                    </owl:Restriction>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteGrad -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteGrad">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmCurso"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoGrad"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#EstudantePG -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#EstudantePG">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmCurso"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPG"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteSobrecarreg -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteSobrecarreg">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+                        <owl:minQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">4</owl:minQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteSusse -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#EstudanteSusse">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
+                    <owl:Restriction>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+                        <owl:maxQualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">2</owl:maxQualifiedCardinality>
+                        <owl:onClass rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+                    </owl:Restriction>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Funcao -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Funcao">
+        <rdfs:comment xml:lang="pt-br">Papel desempenhado por uma pessoa na universidade</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Organizacao -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Organizacao">
+        <rdfs:comment xml:lang="pt-br">Elementos organizacionais que estruturam o funcionamento da Universidade.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa">
+        <rdfs:comment>Uma pessoa que, de alguma forma, participa da vida universitária.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Prof -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Prof">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Funcao"/>
+    </owl:Class>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#ProfTitular -->
+
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#ProfTitular">
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Prof"/>
+    </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#carla -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#carla">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
+        <Universidade:matriculadaEm rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#cpgei"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#cpgei -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#cpgei">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPG"/>
+        <rdfs:comment>Programa de Pós-Graduação: CPGEI</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#dis_gdc -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_gdc">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+        <rdfs:comment>Disciplina grafos de conhecimento</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+        <rdfs:comment>Disciplina IA</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+        <rdfs:comment>Disciplina metodologia científica</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+        <rdfs:comment>Disciplina matemática discreta</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disciplina"/>
+        <rdfs:comment>Disciplina redes neurais</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#grad_bsi -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_bsi">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoGrad"/>
+        <rdfs:comment>Curso Bacharelado em Sist. Informação</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#grad_edc -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_edc">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoGrad"/>
+        <rdfs:comment>Curso de graduação de Engenharia de Computação</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#jose -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#jose">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
+        <Universidade:ehCoordenadora rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_bsi"/>
+        <Universidade:matriculadaEm rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#ppgca"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#maria -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#maria">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
+        <Universidade:matriculadaEm rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_edc"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
+        <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
+    </owl:NamedIndividual>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#maria"/>
+        <owl:assertionProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+        <owl:targetIndividual rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_gdc"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#maria"/>
+        <owl:assertionProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+        <owl:targetIndividual rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc"/>
+    </rdf:Description>
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#NegativePropertyAssertion"/>
+        <owl:sourceIndividual rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#maria"/>
+        <owl:assertionProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
+        <owl:targetIndividual rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md"/>
+    </rdf:Description>
+    
+
+
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#ppgca -->
+
+    <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#ppgca">
+        <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#CursoPG"/>
+        <rdfs:comment>Programa de Pós-Graduação: PPGCA</rdfs:comment>
+    </owl:NamedIndividual>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // General axioms
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    <rdf:Description>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDifferent"/>
+        <owl:distinctMembers rdf:parseType="Collection">
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_gdc"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md"/>
+            <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
+        </owl:distinctMembers>
+    </rdf:Description>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
