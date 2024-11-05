@@ -157,9 +157,9 @@
     
 
 
-    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA -->
+    <!-- https://github.com/tacla/Ontologies/tree/main/Universidade#DiscIA -->
 
-    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA">
+    <owl:Class rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#DiscIA">
         <owl:equivalentClass>
             <owl:Class>
                 <owl:intersectionOf rdf:parseType="Collection">
@@ -204,8 +204,8 @@
                 <owl:intersectionOf rdf:parseType="Collection">
                     <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
                     <owl:Restriction>
-                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEm"/>
-                        <owl:someValuesFrom rdf:resource="http://www.w3.org/2002/07/owl#Thing"/>
+                        <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmCurso"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Curso"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
@@ -224,15 +224,16 @@
                     <rdf:Description rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
-                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA"/>
+                        <owl:someValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#DiscIA"/>
                     </owl:Restriction>
                     <owl:Restriction>
                         <owl:onProperty rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#matriculadaEmDisc"/>
-                        <owl:allValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Disc_IA"/>
+                        <owl:allValuesFrom rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#DiscIA"/>
                     </owl:Restriction>
                 </owl:intersectionOf>
             </owl:Class>
         </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Estudante"/>
     </owl:Class>
     
 
@@ -451,7 +452,7 @@
     <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#jose">
         <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
         <Universidade:ehCoordenadora rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_bsi"/>
-        <Universidade:matriculadaEm rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#ppgca"/>
+        <Universidade:matriculadaEmCurso rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#ppgca"/>
         <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
         <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_mc"/>
         <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_md"/>
@@ -464,7 +465,7 @@
 
     <owl:NamedIndividual rdf:about="https://github.com/tacla/Ontologies/tree/main/Universidade#maria">
         <rdf:type rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#Pessoa"/>
-        <Universidade:matriculadaEm rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_edc"/>
+        <Universidade:matriculadaEmCurso rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#grad_edc"/>
         <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_ia"/>
         <Universidade:matriculadaEmDisc rdf:resource="https://github.com/tacla/Ontologies/tree/main/Universidade#dis_rn"/>
     </owl:NamedIndividual>
