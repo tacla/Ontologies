@@ -1,0 +1,156 @@
+<?xml version="1.0"?>
+<Ontology xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/A1_0.0.1"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     ontologyIRI="https://raw.githubusercontent.com/tacla/Ontologies/main/MundoDosCubos/A1_0.0.1">
+    <Prefix name="" IRI="http://www.semanticweb.org/cesar/ontologies/2026/3/untitled-ontology-33/"/>
+    <Prefix name="owl" IRI="http://www.w3.org/2002/07/owl#"/>
+    <Prefix name="rdf" IRI="http://www.w3.org/1999/02/22-rdf-syntax-ns#"/>
+    <Prefix name="xml" IRI="http://www.w3.org/XML/1998/namespace"/>
+    <Prefix name="xsd" IRI="http://www.w3.org/2001/XMLSchema#"/>
+    <Prefix name="rdfs" IRI="http://www.w3.org/2000/01/rdf-schema#"/>
+    <Import>https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC-0.0.1</Import>
+    <Annotation>
+        <AnnotationProperty abbreviatedIRI="owl:versionInfo"/>
+        <Literal>Abox que faz algumas instanciações sobre a versão 0.0.1 do Mundo dos Cubos</Literal>
+    </Annotation>
+    <Declaration>
+        <NamedIndividual IRI="#a"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#b"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#c"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#d"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#e"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#f"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#g"/>
+    </Declaration>
+    <Declaration>
+        <NamedIndividual IRI="#m"/>
+    </Declaration>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#a"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#b"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#c"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#d"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#e"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#f"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Cubo"/>
+        <NamedIndividual IRI="#g"/>
+    </ClassAssertion>
+    <ClassAssertion>
+        <Class IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#Mesa"/>
+        <NamedIndividual IRI="#m"/>
+    </ClassAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáAFrenteDe"/>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual IRI="#g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#a"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáSobre"/>
+        <NamedIndividual IRI="#b"/>
+        <NamedIndividual IRI="#a"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#b"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_azul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáSobre"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual IRI="#b"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#c"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_vermelha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáAFrenteDe"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual IRI="#g"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáSobre"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual IRI="#m"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#d"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_laranja"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáSobre"/>
+        <NamedIndividual IRI="#e"/>
+        <NamedIndividual IRI="#d"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#e"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_cinza"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#estáSobre"/>
+        <NamedIndividual IRI="#f"/>
+        <NamedIndividual IRI="#d"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#f"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_vermelha"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#g"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_azul"/>
+    </ObjectPropertyAssertion>
+    <ObjectPropertyAssertion>
+        <ObjectProperty IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#temCor"/>
+        <NamedIndividual IRI="#m"/>
+        <NamedIndividual IRI="https://github.com/tacla/Ontologies/tree/main/MundoDosCubos/MdC#cor_cinza"/>
+    </ObjectPropertyAssertion>
+</Ontology>
+
+
+
+<!-- Generated by the OWL API (version 4.5.29.2024-05-13T12:11:03Z) https://github.com/owlcs/owlapi -->
+
