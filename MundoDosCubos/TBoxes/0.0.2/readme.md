@@ -1,6 +1,6 @@
 *Ontologia MdC v0.0.2*
 
-Inclui os axiomas seguintes sobre as propriedades:
+Inclui os seguintes axiomas sobre as propriedades:
 * inversas: estáSobre &lt;-&gt; estáSob
 * temMassa: funcional (um objeto tem um valor único de massa em kg)
 * transitiva: b -&gt; estáSobre -&gt; a -&gt; estáSobre -&gt; m, logo b -&gt; estáSobre -&gt; m
